@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.springframework.org/schema/beans">
+
+
+<bean  class="com.te.springcore.bean.Movies" id="mov"  >
+
+<property name="id" value="10" />
+
+<property name="mname" value="Bahubali" />
+
+</bean>
+
+<bean  class="com.te.springcore.bean.Movies" id="sahoo" autowire-candidate="false">
+
+<property name="id" value="20" />
+
+<property name="mname" value="Sahoo" />
+
+</bean>
+
+<bean  class="com.te.springcore.bean.Movies" id="billa" autowire-candidate="false">
+
+<property name="id" value="30" />
+
+<property name="mname" value="Billa" />
+
+</bean>
+
+
+
+
+</beans>
